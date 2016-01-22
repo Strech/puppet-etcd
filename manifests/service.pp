@@ -8,5 +8,7 @@ class etcd::service {
     enable => $etcd::service_enable,
     start => '/etc/init.d/etcd start',
     stop => '/etc/init.d/etcd stop',
+    status => '/etc/init.d/etcd status',
+    pattern => '/usr/bin/etcd',
   }
 }
